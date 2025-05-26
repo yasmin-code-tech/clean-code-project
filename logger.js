@@ -11,16 +11,16 @@ function disableDebug() {
 
 function debug(...args) {
     if (debugEnabled) {
-        console.log('[DEBUG]', ...args);
+        console.log("[DEBUG]", ...args);
     }
 }
 
 function info(...args) {
-    console.log('[INFO]', ...args);
+    console.log("[INFO]", ...args);
 }
 
 function error(...args) {
-    console.error('[ERROR]', ...args);
+    console.error("[ERROR]", ...args);
 }
 
 module.exports = {

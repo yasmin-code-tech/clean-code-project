@@ -1,0 +1,14 @@
+{
+  "name": "clean-code-project",
+  "version": "1.0.0",
+  "description": "-3. Refatore o código aplicando os princípios de Clean Code:\r - Renomeie variáveis e funções para nomes significativos\r - Divida funções grandes em funções menores com responsabilidade única\r - Substitua números mágicos por constantes nomeadas\r - Remova variáveis globais desnecessárias\r - Padronize o tratamento de erros\r - Separe código de debug do código de produção\r - Mantenha cada função com menos de 30 linhas\r - Elimine repetições usando abstrações adequada",
+  "main": "swapi.js",
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.27.0"
+  }
+}
