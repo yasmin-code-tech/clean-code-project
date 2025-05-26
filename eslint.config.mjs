@@ -1,10 +1,16 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 
-
 export default [
     { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
-    { languageOptions: { globals: globals.browser } },
+    {
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+                ...globals.node, // Adiciona os objetos globais do Node.js, como process
+            },
+        },
+    },
     pluginJs.configs.recommended,
     {
         rules: {
@@ -40,6 +46,5 @@ export default [
             "prefer-template": "error",
         },
         ignores: ["**/node_modules/**", "eslint.config.mjs"],
-    }
-
+    },
 ];
